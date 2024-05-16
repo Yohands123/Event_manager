@@ -13,7 +13,6 @@ public class Event {
     private String eventReason;
     private String eventLocation;
     private List<Guest> eventGuestList;
-    private List<Guest> eventResponseList;
     private LocalTime eventTime;
     private List<Guest> guests = new ArrayList<>();
 
@@ -28,7 +27,7 @@ public class Event {
         this.eventReason = eventReason;
         this.eventLocation = eventLocation;
         this.eventGuestList = eventGuestList;
-        this.eventResponseList = eventResponseList;
+
         this.eventTime = eventTime;
     }
 
@@ -80,13 +79,6 @@ public class Event {
         this.eventGuestList = eventGuestList;
     }
 
-    public List<Guest> getEventResponseList() {
-        return eventResponseList;
-    }
-
-    public void setEventResponseList(List<Guest> eventResponseList) {
-        this.eventResponseList = eventResponseList;
-    }
 
     public LocalTime getEventTime() {
         return eventTime;
@@ -105,7 +97,6 @@ public class Event {
                 ", eventReason='" + eventReason + '\'' +
                 ", eventLocation='" + eventLocation + '\'' +
                 ", eventGuestList=" + eventGuestList +
-                ", eventResponseList=" + eventResponseList +
                 ", eventTime=" + eventTime +'\''+
                 ", guests=" + guests +
                 '}';
